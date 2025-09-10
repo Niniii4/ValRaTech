@@ -10,8 +10,8 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 public class PerformanceTests extends Simulation {
     ScenarioBuilder helloScenario = scenario("ValRaTech API Performance Test")
             .exec(
-                    exec(karateFeature("classpath:features/PositiveTests.feature")),
-                    exec(karateFeature("classpath:features/NegativeTests.feature"))
+                    exec(karateFeature("classpath:features/api/PositiveTests.feature")),
+                    exec(karateFeature("classpath:features/api/NegativeTests.feature"))
             );
 
     {

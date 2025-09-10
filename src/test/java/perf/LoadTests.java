@@ -10,7 +10,7 @@ import static io.gatling.javaapi.core.OpenInjectionStep.atOnceUsers;
 
 public class LoadTests extends Simulation {
     ScenarioBuilder helloScenario = scenario("ValRaTech API Load Test")
-            .exec(karateFeature("classpath:features/PositiveTests.feature"));
+            .exec(karateFeature("classpath:features/api/PositiveTests.feature"));
 
     {
         setUp(
