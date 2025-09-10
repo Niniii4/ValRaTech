@@ -30,6 +30,16 @@ mvn test
 ```bash
 mvn gatling:test
 ```
+
+**Open the API/UI report:**
+```bash
+start target\karate-reports\karate-summary.html
+```
+
+**Open the Performance report:**
+```bash
+start start target\gatling\generated_folder_name\index.html
+```
 Visit http://localhost:8080 to try the UI.
 
 ## Usage
